@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B17E12D23247A2C0085553F /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B17E12C23247A2C0085553F /* URLSessionHTTPClient.swift */; };
 		2B1F361E2312072F0077B960 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1F361D2312072F0077B960 /* HTTPClient.swift */; };
 		2B1F3620231208530077B960 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1F361F231208530077B960 /* FeedItemsMapper.swift */; };
 		2B310AD12300C4D000CB9A29 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B310AD02300C4D000CB9A29 /* RemoteFeedLoader.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B17E12C23247A2C0085553F /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		2B1F361D2312072F0077B960 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		2B1F361F231208530077B960 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		2B310AD02300C4D000CB9A29 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				2B310AD02300C4D000CB9A29 /* RemoteFeedLoader.swift */,
 				2B1F361D2312072F0077B960 /* HTTPClient.swift */,
 				2B1F361F231208530077B960 /* FeedItemsMapper.swift */,
+				2B17E12C23247A2C0085553F /* URLSessionHTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				2B310AD12300C4D000CB9A29 /* RemoteFeedLoader.swift in Sources */,
 				2B1F361E2312072F0077B960 /* HTTPClient.swift in Sources */,
 				2BFC19E322FA5D6A00660AE2 /* FeedItem.swift in Sources */,
+				2B17E12D23247A2C0085553F /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
