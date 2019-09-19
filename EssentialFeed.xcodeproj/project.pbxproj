@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B025645233306B7008971FC /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B025644233306B7008971FC /* LocalFeedLoader.swift */; };
 		2B17E12D23247A2C0085553F /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B17E12C23247A2C0085553F /* URLSessionHTTPClient.swift */; };
 		2B17E1352325ACBC0085553F /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B17E1342325ACBC0085553F /* EssentialFeedAPIEndToEndTests.swift */; };
 		2B17E1372325ACBC0085553F /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFC19C822FA5D3000660AE2 /* EssentialFeed.framework */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B025644233306B7008971FC /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		2B17E12C23247A2C0085553F /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		2B17E1322325ACBC0085553F /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B17E1342325ACBC0085553F /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B02564323330696008971FC /* Feed Cache */ = {
+			isa = PBXGroup;
+			children = (
+				2B025644233306B7008971FC /* LocalFeedLoader.swift */,
+			);
+			path = "Feed Cache";
+			sourceTree = "<group>";
+		};
 		2B17E1332325ACBC0085553F /* EssentialFeedAPIEndToEndTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +169,7 @@
 			children = (
 				2BFC19CB22FA5D3000660AE2 /* EssentialFeed.h */,
 				2BFC19CC22FA5D3000660AE2 /* Info.plist */,
+				2B02564323330696008971FC /* Feed Cache */,
 				2BFC19E622FA619500660AE2 /* Feed Feature */,
 				2B310ACF2300C49B00CB9A29 /* Feed API */,
 			);
@@ -335,6 +346,7 @@
 				2B1F3620231208530077B960 /* FeedItemsMapper.swift in Sources */,
 				2BFC19E522FA606700660AE2 /* FeedLoader.swift in Sources */,
 				2B310AD12300C4D000CB9A29 /* RemoteFeedLoader.swift in Sources */,
+				2B025645233306B7008971FC /* LocalFeedLoader.swift in Sources */,
 				2B1F361E2312072F0077B960 /* HTTPClient.swift in Sources */,
 				2BFC19E322FA5D6A00660AE2 /* FeedItem.swift in Sources */,
 				2B17E12D23247A2C0085553F /* URLSessionHTTPClient.swift in Sources */,
