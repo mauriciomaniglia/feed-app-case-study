@@ -62,7 +62,7 @@ class ValidateFeedCacheUseCaseTests: XCTestCase {
     func test_validateCache_deletesExpiredCache() {
         let feed = uniqueImageFeed()
         let fixCurrentDate = Date()
-        let expiredTimestamp = fixCurrentDate.minusFeedCacheMaxAge().adding(days: -1)
+        let expiredTimestamp = fixCurrentDate.minusFeedCacheMaxAge().adding(seconds: -1)
         let (sut, store) = makeSUT(currentDate: { fixCurrentDate })
         
         sut.validateCache()
