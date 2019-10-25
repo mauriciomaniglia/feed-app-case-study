@@ -32,7 +32,7 @@ class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
     func test_retrieve_hasNoSideEffectsOnEmptyCache() {
         let sut = makeSUT()
         
-        expect(sut: sut, toRetrieveTwice: .empty)
+        expect(sut, toRetrieveTwice: .empty)
     }
     
     func test_retrieve_deliversFoundValuesOnNonEmptyCache() {
@@ -52,7 +52,7 @@ class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
         
         insert((feed, timestamp), to: sut)
         
-        expect(sut: sut, toRetrieveTwice: .found(feed: feed, timestamp: timestamp))
+        expect(sut, toRetrieveTwice: .found(feed: feed, timestamp: timestamp))
     }
     
     func test_retrieve_deliversFailureOnRetrievalError() {
@@ -70,7 +70,7 @@ class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
         
         try! "invalid data".write(to: storeURL, atomically: false, encoding: .utf8)
         
-        expect(sut: sut, toRetrieveTwice: .failure(anyNSError()))
+        expect(sut, toRetrieveTwice: .failure(anyNSError()))
     }
     
     func test_insert_deliversNoErrorOnEmptyCache() {
