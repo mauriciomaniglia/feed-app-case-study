@@ -80,7 +80,12 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
 
     func test_delete_hasNoSideEffectsOnEmptyCache() {
-
+        let sut = makeSUT()
+        
+        deleteCache(from: sut)
+        let deletionError = deleteCache(from: sut)
+        
+        XCTAssertNil(deletionError, "Expected empty cache deletion to succeed")
     }
 
     func test_delete_deliversNoErrorOnNonEmptyCache() {
