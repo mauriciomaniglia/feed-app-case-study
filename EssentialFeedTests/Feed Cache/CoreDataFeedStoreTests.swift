@@ -44,7 +44,11 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
 
     func test_insert_deliversNoErrorOnEmptyCache() {
+        let sut = makeSUT()
+        
+        let insertionError = insert((uniqueImageFeed().local, Date()), to: sut)
 
+        XCTAssertNil(insertionError, "Expected to insert cache successfully")
     }
 
     func test_insert_deliversNoErrorOnNonEmptyCache() {
