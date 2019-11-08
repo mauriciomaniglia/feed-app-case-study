@@ -61,7 +61,14 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
 
     func test_insert_overridesPreviouslyInsertedCacheValues() {
-
+        let sut = makeSUT()
+        insert((uniqueImageFeed().local, Date()), to: sut)
+        
+        let latestFeed = uniqueImageFeed().local
+        let latestTimestamp = Date()
+        insert((latestFeed, latestTimestamp), to: sut)
+        
+        expect(sut, toRetrieve: .found(feed: latestFeed, timestamp: latestTimestamp))
     }
 
     func test_delete_deliversNoErrorOnEmptyCache() {
