@@ -19,10 +19,6 @@ func uniqueImageFeed() -> (models: [FeedImage], local: [LocalFeedImage]) {
     return (models, localFeed)
 }
 
-func anyURL() -> URL {
-    return URL(string: "http://any-url.com")!
-}
-
 extension Date {
     private var feedCacheMaxAgeInDays: Int {
         return 7
