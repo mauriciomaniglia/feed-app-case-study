@@ -6,7 +6,7 @@
 //  Copyright © 2019 Mauricio Cesar Maniglia Junior. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for EssentialFeed.
 FOUNDATION_EXPORT double EssentialFeedVersionNumber;
