@@ -242,13 +242,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2270E9BC23CBCD0600E0CF1F /* Models */ = {
+		2236377023CDBFCF008E269D /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				2270E9BD23CBCD2400E0CF1F /* FeedViewModel.swift */,
 				2270E9BF23CBD70F00E0CF1F /* FeedImageViewModel.swift */,
 			);
-			path = Models;
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		2B02564323330696008971FC /* Feed Cache */ = {
@@ -428,6 +428,7 @@
 			isa = PBXGroup;
 			children = (
 				4295A0722395617000E37529 /* Feed Image Loader */,
+				2236377023CDBFCF008E269D /* Feed Presentation */,
 				4295A071239560FB00E37529 /* Feed UI */,
 				424E8BD22385F05B007FCE77 /* Info.plist */,
 			);
@@ -482,7 +483,6 @@
 			isa = PBXGroup;
 			children = (
 				4295A0792395899800E37529 /* Composers */,
-				2270E9BC23CBCD0600E0CF1F /* Models */,
 				4295A06823955CA700E37529 /* Controllers */,
 				4295A06723955C9C00E37529 /* Views */,
 			);
