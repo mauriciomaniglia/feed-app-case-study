@@ -22,7 +22,9 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     private var cellControllers = [IndexPath: FeedImageCellController]()
     
     public override func viewDidLoad() {
-        super.viewDidLoad()                
+        super.viewDidLoad()
+        
+        title = "My Feed"
         refresh()
     }
     
