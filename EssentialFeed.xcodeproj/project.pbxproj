@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		22057ED023DBA05000612991 /* FeedViewControllerTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22057ECF23DBA05000612991 /* FeedViewControllerTests+Localization.swift */; };
-		22057ED923DC3B7A00612991 /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22057ED823DC3B7A00612991 /* FeedLocalizationTests.swift */; };
 		22057EDB23DE257E00612991 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22057EDA23DE257E00612991 /* MainQueueDispatchDecorator.swift */; };
 		22057EDD23DE26AF00612991 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22057EDC23DE26AF00612991 /* WeakRefVirtualProxy.swift */; };
 		22057EDF23DE272000612991 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22057EDE23DE272000612991 /* FeedImageDataLoaderPresentationAdapter.swift */; };
@@ -24,6 +23,7 @@
 		223C9CB123E2DCEE008C777C /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C9CB023E2DCEE008C777C /* FeedViewModel.swift */; };
 		223C9CB323E2DD40008C777C /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C9CB223E2DD40008C777C /* FeedLoadingViewModel.swift */; };
 		223C9CB523E2DD7C008C777C /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C9CB423E2DD7C008C777C /* FeedErrorViewModel.swift */; };
+		223C9CB623E2DFD9008C777C /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22057ED823DC3B7A00612991 /* FeedLocalizationTests.swift */; };
 		2270E9C023CBD70F00E0CF1F /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2270E9BF23CBD70F00E0CF1F /* FeedImageViewModel.swift */; };
 		22E1891823D070E300CBC8A3 /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E1891723D070E300CBC8A3 /* Feed.xcassets */; };
 		22E1891A23D462BF00CBC8A3 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E1891923D462BF00CBC8A3 /* UITableView+Dequeueing.swift */; };
@@ -289,14 +289,6 @@
 			path = "Feed UI";
 			sourceTree = "<group>";
 		};
-		22057ED723DC3B5100612991 /* Feed Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				22057ED823DC3B7A00612991 /* FeedLocalizationTests.swift */,
-			);
-			path = "Feed Presentation";
-			sourceTree = "<group>";
-		};
 		2236377023CDBFCF008E269D /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				223C9CA323E2CA88008C777C /* FeedPresenterTests.swift */,
+				22057ED823DC3B7A00612991 /* FeedLocalizationTests.swift */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -526,7 +519,6 @@
 		424E8BDB2385F05C007FCE77 /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				22057ED723DC3B5100612991 /* Feed Presentation */,
 				22057ED623DC3B3C00612991 /* Feed UI */,
 				424E8BDE2385F05C007FCE77 /* Info.plist */,
 			);
@@ -891,6 +883,7 @@
 				223C9CA423E2CA88008C777C /* FeedPresenterTests.swift in Sources */,
 				2BDB854F22FFA670008860CC /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				2B06772923638D8C005ABF5B /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
+				223C9CB623E2DFD9008C777C /* FeedLocalizationTests.swift in Sources */,
 				2BC7A00A231B04EB002765FD /* URLSessionHTTPClientTests.swift in Sources */,
 				2B54ED202350F9BE00319A29 /* ShareTestHelpers.swift in Sources */,
 				2B709826233D8F5900846977 /* FeedStoreSpy.swift in Sources */,
@@ -946,7 +939,6 @@
 			files = (
 				42DC640A2387FAD9000841BA /* FeedUIIntegrationTests.swift in Sources */,
 				4295A0702395603300E37529 /* FeedViewControllerTests+Assertions.swift in Sources */,
-				22057ED923DC3B7A00612991 /* FeedLocalizationTests.swift in Sources */,
 				4295A06423955B4E00E37529 /* UIButton+TestHelpers.swift in Sources */,
 				4295A06223955ADA00E37529 /* UIRefreshControl+TestHelpers.swift in Sources */,
 				4295A06623955BD900E37529 /* UIControl+TestHelpers.swift in Sources */,
