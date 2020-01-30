@@ -6,8 +6,6 @@
 //  Copyright © 2020 Mauricio Cesar Maniglia Junior. All rights reserved.
 //
 
-import Foundation
-
 public struct FeedLoadingViewModel {
     public let isLoading: Bool
 }
