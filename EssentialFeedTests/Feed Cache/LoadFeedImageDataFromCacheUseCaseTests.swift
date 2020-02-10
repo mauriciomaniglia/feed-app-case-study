@@ -78,7 +78,7 @@ class LoadFeedImageDataFromCacheUseCaseTests: XCTestCase {
         store.completeRetrieval(with: anyData())
 
         XCTAssertTrue(received.isEmpty, "Expected no received results after instance has been deallocated")
-     }
+     }        
 
     // MARK: - Helpers
    
