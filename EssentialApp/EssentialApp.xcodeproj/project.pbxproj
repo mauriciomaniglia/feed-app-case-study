@@ -18,6 +18,7 @@
 		1203BE8E23F61B7F00BC1033 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1203BE8B23F61B7F00BC1033 /* EssentialFeediOS.framework */; };
 		1203BE8F23F61B7F00BC1033 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1203BE8B23F61B7F00BC1033 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		12E9F02923F7496900F8EA63 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9F02823F7496900F8EA63 /* FeedLoaderWithFallbackCompositeTests.swift */; };
+		12E9F02B23F74E2B00F8EA63 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9F02A23F74E2B00F8EA63 /* FeedLoaderWithFallbackComposite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		1203BE8A23F61B7F00BC1033 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1203BE8B23F61B7F00BC1033 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E9F02823F7496900F8EA63 /* FeedLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
+		12E9F02A23F74E2B00F8EA63 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				1203BE7023F61B1600BC1033 /* Assets.xcassets */,
 				1203BE7223F61B1600BC1033 /* LaunchScreen.storyboard */,
 				1203BE7523F61B1600BC1033 /* Info.plist */,
+				12E9F02A23F74E2B00F8EA63 /* FeedLoaderWithFallbackComposite.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				1203BE6C23F61B1500BC1033 /* ViewController.swift in Sources */,
 				1203BE6823F61B1500BC1033 /* AppDelegate.swift in Sources */,
+				12E9F02B23F74E2B00F8EA63 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				1203BE6A23F61B1500BC1033 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
