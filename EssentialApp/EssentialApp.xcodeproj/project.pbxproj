@@ -13,7 +13,6 @@
 		1203BE6F23F61B1500BC1033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1203BE6D23F61B1500BC1033 /* Main.storyboard */; };
 		1203BE7123F61B1600BC1033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1203BE7023F61B1600BC1033 /* Assets.xcassets */; };
 		1203BE7423F61B1600BC1033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1203BE7223F61B1600BC1033 /* LaunchScreen.storyboard */; };
-		1203BE7F23F61B1600BC1033 /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1203BE7E23F61B1600BC1033 /* EssentialAppTests.swift */; };
 		1203BE8C23F61B7F00BC1033 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1203BE8A23F61B7F00BC1033 /* EssentialFeed.framework */; };
 		1203BE8D23F61B7F00BC1033 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1203BE8A23F61B7F00BC1033 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1203BE8E23F61B7F00BC1033 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1203BE8B23F61B7F00BC1033 /* EssentialFeediOS.framework */; };
@@ -55,7 +54,6 @@
 		1203BE7323F61B1600BC1033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1203BE7523F61B1600BC1033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1203BE7A23F61B1600BC1033 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1203BE7E23F61B1600BC1033 /* EssentialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppTests.swift; sourceTree = "<group>"; };
 		1203BE8023F61B1600BC1033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1203BE8A23F61B7F00BC1033 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1203BE8B23F61B7F00BC1033 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +115,6 @@
 		1203BE7D23F61B1600BC1033 /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				1203BE7E23F61B1600BC1033 /* EssentialAppTests.swift */,
 				1203BE8023F61B1600BC1033 /* Info.plist */,
 			);
 			path = EssentialAppTests;
@@ -244,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1203BE7F23F61B1600BC1033 /* EssentialAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
