@@ -21,6 +21,7 @@
 		12E9F02B23F74E2B00F8EA63 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9F02A23F74E2B00F8EA63 /* FeedLoaderWithFallbackComposite.swift */; };
 		12E9F02D23F74EE700F8EA63 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9F02C23F74EE700F8EA63 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */; };
 		12E9F02F23F89BBC00F8EA63 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9F02E23F89BBC00F8EA63 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
+		12E9F03223F89C5B00F8EA63 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9F03123F89C5B00F8EA63 /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		12E9F02A23F74E2B00F8EA63 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		12E9F02C23F74EE700F8EA63 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
 		12E9F02E23F89BBC00F8EA63 /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
+		12E9F03123F89C5B00F8EA63 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		1203BE7D23F61B1600BC1033 /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				12E9F03023F89C4E00F8EA63 /* Helpers */,
 				1203BE8023F61B1600BC1033 /* Info.plist */,
 				12E9F02823F7496900F8EA63 /* FeedLoaderWithFallbackCompositeTests.swift */,
 				12E9F02C23F74EE700F8EA63 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
@@ -139,6 +142,14 @@
 				1203BE8B23F61B7F00BC1033 /* EssentialFeediOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12E9F03023F89C4E00F8EA63 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				12E9F03123F89C5B00F8EA63 /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			files = (
 				12E9F02D23F74EE700F8EA63 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				12E9F02923F7496900F8EA63 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
+				12E9F03223F89C5B00F8EA63 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
