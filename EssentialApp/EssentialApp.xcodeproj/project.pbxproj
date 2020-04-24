@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1203BE6823F61B1500BC1033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1203BE6723F61B1500BC1033 /* AppDelegate.swift */; };
 		1203BE6A23F61B1500BC1033 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1203BE6923F61B1500BC1033 /* SceneDelegate.swift */; };
-		1203BE6C23F61B1500BC1033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1203BE6B23F61B1500BC1033 /* ViewController.swift */; };
 		1203BE6F23F61B1500BC1033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1203BE6D23F61B1500BC1033 /* Main.storyboard */; };
 		1203BE7123F61B1600BC1033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1203BE7023F61B1600BC1033 /* Assets.xcassets */; };
 		1203BE7423F61B1600BC1033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1203BE7223F61B1600BC1033 /* LaunchScreen.storyboard */; };
@@ -82,7 +81,6 @@
 		1203BE6423F61B1500BC1033 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1203BE6723F61B1500BC1033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1203BE6923F61B1500BC1033 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1203BE6B23F61B1500BC1033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1203BE6E23F61B1500BC1033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1203BE7023F61B1600BC1033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1203BE7323F61B1600BC1033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 				12D4759F23FFF36C0031BBA1 /* FeedImageDataLoaderPresentationAdapter.swift */,
 				12D475A123FFF36C0031BBA1 /* FeedLoaderPresentationAdapter.swift */,
 				12D475A223FFF36C0031BBA1 /* FeedViewAdapter.swift */,
-				1203BE6B23F61B1500BC1033 /* ViewController.swift */,
 				1203BE6D23F61B1500BC1033 /* Main.storyboard */,
 				1203BE7023F61B1600BC1033 /* Assets.xcassets */,
 				1203BE7223F61B1600BC1033 /* LaunchScreen.storyboard */,
@@ -345,7 +342,6 @@
 				12D475A823FFF36C0031BBA1 /* FeedViewAdapter.swift in Sources */,
 				12D475A623FFF36C0031BBA1 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				12D475A523FFF36C0031BBA1 /* MainQueueDispatchDecorator.swift in Sources */,
-				1203BE6C23F61B1500BC1033 /* ViewController.swift in Sources */,
 				1203BE6823F61B1500BC1033 /* AppDelegate.swift in Sources */,
 				12E9F02B23F74E2B00F8EA63 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				12CE7EE823FC610B00C4063C /* FeedLoaderCacheDecorator.swift in Sources */,
@@ -537,7 +533,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,6 +543,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = manigliamauricio.EssentialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -554,7 +553,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -562,6 +563,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = manigliamauricio.EssentialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
