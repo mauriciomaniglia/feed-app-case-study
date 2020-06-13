@@ -23,6 +23,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     }        
         
     private var cellControllers = [IndexPath: FeedImageCellController]()
+    private var loadingControllers = [IndexPath: FeedImageCellController]()
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,8 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     }
     
     public func display(_ cellControllers: [FeedImageCellController]) {
-         tableModel = cellControllers
+        loadingControllers = [:]
+        tableModel = cellControllers
      }
     
     @IBAction private func refresh() {
@@ -75,10 +77,13 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     }
     
     private func cellController(forRowAt indexPath: IndexPath) -> FeedImageCellController {
-        return tableModel[indexPath.row]
+        let controller = tableModel[indexPath.row]
+        loadingControllers[indexPath] = controller
+        return controller
     }        
     
     private func cancelCellControllerLoad(forRowAt indexPath: IndexPath) {
-        cellController(forRowAt: indexPath).cancelLoad()
+        loadingControllers[indexPath]?.cancelLoad()
+        loadingControllers[indexPath] = nil
     }
 }
