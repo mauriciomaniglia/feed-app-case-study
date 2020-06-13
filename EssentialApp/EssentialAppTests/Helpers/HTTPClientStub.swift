@@ -6,6 +6,7 @@
 //  Copyright © 2020 Mauricio Cesar Maniglia Junior. All rights reserved.
 //
 
+import Foundation
 import EssentialFeed
 
 class HTTPClientStub: HTTPClient {
