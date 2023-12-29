@@ -21,8 +21,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     private var tableModel = [FeedImageCellController]() {
         didSet { tableView.reloadData() }
     }        
-        
-    private var cellControllers = [IndexPath: FeedImageCellController]()
+    
     private var loadingControllers = [IndexPath: FeedImageCellController]()
     private var onViewIsAppearing: ((FeedViewController) -> Void)?
 
