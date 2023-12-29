@@ -64,7 +64,10 @@ class FeedAcceptanceTests: XCTestCase {
         sut.configureWindow()
 
         let nav = sut.window?.rootViewController as? UINavigationController
-        return nav?.topViewController as! FeedViewController
+        let vc = nav?.topViewController as! FeedViewController
+        vc.simulateAppearance()
+
+        return vc
     }
     
     private func enterBackground(with store: InMemoryFeedStore) {

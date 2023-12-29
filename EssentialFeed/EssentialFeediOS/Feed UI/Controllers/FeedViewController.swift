@@ -24,13 +24,23 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         
     private var cellControllers = [IndexPath: FeedImageCellController]()
     private var loadingControllers = [IndexPath: FeedImageCellController]()
-    
+    private var onViewIsAppearing: ((FeedViewController) -> Void)?
+
     public override func viewDidLoad() {
         super.viewDidLoad()
                 
-        refresh()
+        onViewIsAppearing = { vc in
+            vc.onViewIsAppearing = nil
+            vc.refresh()
+        }
     }
-    
+
+    public override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+
+        onViewIsAppearing?(self)
+    }
+
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
